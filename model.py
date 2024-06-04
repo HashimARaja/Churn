@@ -23,6 +23,6 @@ model.fit(X_train, y_train, epochs=200, batch_size=32)
 y_hat = model.predict(X_test)
 y_hat = [0 if val < 0.5 else 1 for val in y_hat]
 accuracy_score(y_test, y_hat)
-model.save(r'C:\Users\Hashi\Github\Churn\newmodel.keras')
+model.save(r'$\Churn\newmodel.keras')
 del model
-model = load_model(r'C:\Users\Hashi\Github\Churn\newmodel.keras')
+model = load_model(r'$\Churn\newmodel.keras')
